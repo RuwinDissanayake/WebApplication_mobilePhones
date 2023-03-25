@@ -1,0 +1,110 @@
+.navbar{
+    width:80%;
+    overflow: auto;
+    background-color: #333;
+    margin-left:250px;
+    margin-top:30px;
+}
+body{
+    font-family: "Courier New",monospace;
+}
+
+.navbar a {
+    width:90px;
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 40px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 35px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.logo{
+    position: absolute;
+}
+
+.android,.apple {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+#option3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#option2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#option1 {
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+.option1 {    
+    border-radius: 10px;            
+    border-style: solid;
+    border-color: white;
+    width: 150px;
+    height: 150px;
+}
+.qwe{
+    
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+}
+
+.link:hover .option1 {
+    border: black solid 4px;
+}

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail</title>
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+      font-family: "Courier", monospace;
+    }
+
+
+    .navbar {
+      width: 80%;
+      overflow: auto;
+      background-color: #333;
+      margin-left: 250px;
+      margin-top: 30px;
+    }
+
+    .navbar a {
+      width: 90px;
+      float: left;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding: 14px 40px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 20px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 40px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 35px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .logo img {
+      position: absolute;
+      margin-top: 0px;
+      margin-left: 10px;
+    }
+
+    .heading {
+      position: relative;
+      display: inline-block;
+      font-family: Courier;
+      left: 700px;
+      top: 50px;
+
+    }
+
+    .main {
+      position: relative;
+      display: inline-block;
+      left: 350px;
+      top: 100px;
+      border: 5px solid #555;
+      border-radius: 20%;
+
+
+    }
+
+    .img2 {
+      position: relative;
+      display: inline-block;
+      left: 450px;
+      top: 100px;
+      border: 5px solid #555;
+      border-radius: 20%;
+
+    }
+
+    .img3 {
+      position: relative;
+      display: inline-block;
+      left: 550px;
+      top: 100px;
+      border: 5px solid #555;
+      border-radius: 20%;
+    }
+
+    .img4 {
+      position: relative;
+      display: inline-block;
+      left: 650px;
+      top: 100px;
+      border: 5px solid #555;
+      border-radius: 20%;
+    }
+
+    .img5 {
+      position: relative;
+      display: inline-block;
+      left: 750px;
+      top: 100px;
+      border: 5px solid #555;
+      border-radius: 20%;
+    }
+
+    .seperator {
+      position: relative;
+      top: 150px;
+    }
+
+    .apple {
+      position: relative;
+      display: inline-block;
+      left: 600px;
+      top: 140px;
+
+    }
+
+    .huawei {
+      position: relative;
+      display: inline-block;
+      left: 600px;
+      top: -770px;
+    }
+
+    .samsung {
+      position: relative;
+      display: inline-block;
+      left: 600px;
+      top: -1578px;
+    }
+
+    .vivo {
+      position: relative;
+      display: inline-block;
+      left: 600px;
+      top: -2485px;
+    }
+
+    .sony {
+      position: relative;
+      display: inline-block;
+      left: 600px;
+      top: -3390px;
+    }
+
+    .large {
+      visibility: hidden;
+    }
+
+    .bhead {
+      position: relative;
+      left: 100px;
+      font-family: Courier;
+
+    }
+
+    .app {
+      position: relative;
+      top: 50px;
+      font-family: Courier;
+      padding: 100px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .hua {
+      position: relative;
+      top: -855px;
+      font-family: Courier;
+      padding: 100px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .sam {
+      position: relative;
+      top: -1668px;
+      font-family: Courier;
+      padding: 100px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .viv {
+      position: relative;
+      top: -2570px;
+      font-family: Courier;
+      padding: 100px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .son {
+      position: relative;
+      top: -3475px;
+      font-family: Courier;
+      padding: 100px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .contentbtn {
+      background-color: black;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    .contentdown {
+      position: relative;
+      display: inline-block;
+      font-family: courier;
+    }
+
+    .contentdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .contentdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .contentdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .contentdown:hover .contentdown-content {
+      display: block;
+    }
+
+    .contentdown:hover .contentbtn {
+      background-color: red;
+    }
+
+    #contentbdiv {
+      position: relative;
+      top: -80px;
+      left: 20px;
+
+    }
+
+    #contentfdiv {
+      position: relative;
+      top: -10px;
+      left: 20px;
+
+    }
+  </style>
+</head>
+
+<body id="body">
+  <form>
+    <div class="logo">
+      <a href="../Homepage.html" target="_self"><img src="../images/logo.jpeg" alt="logo" width="200" height="70" /></a>
+    </div>
+    <div class="navbar">
+      <a href="../Homepage.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Products
+        </button>
+        <div class="dropdown-content">
+          <a href="../Product/android.html">Android</a>
+          <a href="../Product/apple.html">Apple</a>
+        </div>
+      </div>
+      <div>
+
+        <a href="../About/details.html">About</a>
+        <a href="../Contents/Thumbnail.html">Brands</a>
+        <a href="#feedback">Feedback</a>
+        <div class="dropdown">
+          <button class="dropbtn">Other
+          </button>
+          <div class="dropdown-content">
+            <a href="../Quiz/Quiz.html">Quiz</a>
+            <a href="../SItemap/sitemap.html">Sitemap</a>
+            <a href="../extracontenet/iPhone12.html">Extra Content</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h1 class="heading"> Brands </h1>
+    <br>
+    <br>
+    <hr>
+    <div>
+      <div class="main">
+        <img id="applethumb" src="../images/Applelogo.png" class="thumbnail" height="100" width="100">
+      </div>
+      <div class="img2">
+        <img id="huaweithumb" src="../images/huawei.webp" height="100" width="100">
+      </div>
+      <div class="img3">
+        <img id="samsungthumb" src="../images/Samsung.jpg" height="100" width="100">
+      </div>
+      <div class="img4">
+        <img id="vivothumb" src="../images/vivo.png" height="100" width="100">
+      </div>
+      <div class="img5">
+        <img id="sonythumb" src="../images/Sony.png" height="100" width="100">
+      </div>
+    </div>
+    <div>
+      <hr class="seperator">
+    </div>
+    <div>
+      <div id="contentbdiv" class="contentdown">
+        <button class="contentbtn">Background Color</button>
+        <div id="bcontentdowncontent" class="contentdown-content">
+          <a href="#" id="yellow">Yellow</a>
+          <a href="#" id="grey">Grey</a>
+          <a href="#" id="purple">Purple</a>
+        </div>
+      </div>
+      <br>
+      <div id=contentfdiv class="contentdown">
+        <button id="fbutton" class="contentbtn">.....Font Color......</button>
+        <div class="contentdown-content">
+          <a href="#" id="red">Red</a>
+          <a href="#" id="green">Green</a>
+          <a href="#" id="pink">Pink</a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="large">
+      <div class="apple">
+        <h1 class="bhead" id="ahead">Apple</h1>
+        <img id=appleimg src="../images/Applelogo.png" height="300" width="300" style="border:5px solid #555">
+      </div>
+      <div class="app">
+        <br>
+        <p id=appdes>The iPhone has a user interface built around a multi-touch screen. It connects to cellular networks
+          or Wi-Fi, and can make calls, browse the web, take pictures, play music and send and receive emails and text
+          messages. Since the iPhone's launch further features have been added, including larger screen sizes, shooting
+          video, waterproofing, the ability to install third-party mobile apps through an app store, and many
+          accessibility features.</p>
+      </div>
+      <div class="huawei">
+        <h1 class="bhead" id="huhead">Huawei</h1>
+        <img id=huaweiimg src="../images/huawei.webp" height="300" width="300" style="border:5px solid #555">
+      </div>
+      <div class="hua">
+        <br>
+        <p id="huades"> Huawei is the second-biggest smartphone maker in the world, as of the first quarter of 2019.
+          Their portfolio of phones includes both high-end smartphones, its Huawei Mate series and Huawei P series, and
+          cheaper handsets that fall under its Honor brand.</p>
+      </div>
+
+      <div class="samsung">
+        <h1 class="bhead" id="sahead">Samsung</h1>
+        <img id=samsungimg src="../images/Samsung.jpg" height="300" width="300" style="border:5px solid #555">
+      </div>
+      <div class="sam">
+        <br>
+        <p id="samdes"> Samsung, one of the biggest smartphone players in the world, has the highest global smartphone
+          market share of nearly 21%. Samsung has really stepped up their game over the past couple of years. With a
+          slew of new features and some ground-breaking tech, they are slowly winning the masses over one device at a
+          time. One thing to note about Samsung phones is their camera. Their cameras are on point. If you love taking
+          photos you’ll love the Samsung range</p>
+      </div>
+      <div class="vivo">
+        <h1 class="bhead" id="vhead">Vivo</h1>
+        <img id=vivoimg src="../images/vivo.png" height="300" width="300" style="border:5px solid #555">
+      </div>
+      <div class="viv">
+        <br>
+        <p id="vivodes"> Vivo Communication Technology Co. Ltd., (styled as vivo), is a Chinese multinational technology
+          company headquartered in Dongguan, Guangdong that designs and develops smartphones, smartphone accessories,
+          software and online services. The company develops software for its phones, distributed through its
+          V-Appstore, with iManager included in their proprietary, Android-based operating system, Funtouch OS in
+          Global, Origin OS in Mainland China and India. </p>
+      </div>
+      <div class="sony">
+        <h1 class="bhead" id="shead">Sony</h1>
+        <img id=sonyimg src="../images/Sony.png" height="300" width="300" style="border:5px solid #555">
+      </div>
+      <div class="son">
+        <br>
+        <p id="sonydes"> Sony Ericsson (originally Ericsson) was part of the Symbian Ltd. consortium and supported the
+          UIQ pen-based touch interface for Symbian OS. Since 2012 all products by Sony Mobile have been in the Xperia
+          range and running the Android OS - the Xperia X10 model launched in 2010 was the first to feature this. In
+          2011 Sony Ericsson carried a range of mid and high-end Android smartphones all using the same SoC, only
+          differentiating in form factor, screen size and multimedia capabilities. </p>
+      </div>
+
+    </div>
+    <script>
+      document.getElementById("applethumb").addEventListener("mouseover", applevis);
+      document.getElementById("applethumb").addEventListener("mouseout", applehid);
+      document.getElementById("huaweithumb").addEventListener("mouseover", huaweivis);
+      document.getElementById("huaweithumb").addEventListener("mouseout", huaweihid);
+      document.getElementById("samsungthumb").addEventListener("mouseover", samsungvis);
+      document.getElementById("samsungthumb").addEventListener("mouseout", samsunghid);
+      document.getElementById("vivothumb").addEventListener("mouseover", vivovis);
+      document.getElementById("vivothumb").addEventListener("mouseout", vivohid);
+      document.getElementById("sonythumb").addEventListener("mouseover", sonyvis);
+      document.getElementById("sonythumb").addEventListener("mouseout", sonyhid);
+
+
+      function applevis(x) {
+        appleimg.style.visibility = "visible";
+        ahead.style.visibility = "visible";
+        appdes.style.visibility = "visible";
+
+      }
+
+      function applehid(x) {
+        appleimg.style.visibility = "hidden";
+        ahead.style.visibility = "hidden";
+        appdes.style.visibility = "hidden";
+      }
+
+      function huaweivis(x) {
+        huaweiimg.style.visibility = "visible";
+        huhead.style.visibility = "visible";
+        huades.style.visibility = "visible";
+      }
+
+      function huaweihid(x) {
+        huaweiimg.style.visibility = "hidden";
+        huhead.style.visibility = "hidden";
+        huades.style.visibility = "hidden";
+
+      }
+
+      function samsungvis(x) {
+        samsungimg.style.visibility = "visible";
+        sahead.style.visibility = "visible";
+        samdes.style.visibility = "visible";
+      }
+
+      function samsunghid(x) {
+        samsungimg.style.visibility = "hidden";
+        sahead.style.visibility = "hidden";
+        samdes.style.visibility = "hidden";
+      }
+
+      function vivovis(x) {
+        vivoimg.style.visibility = "visible";
+        vhead.style.visibility = "visible";
+        vivodes.style.visibility = "visible";
+      }
+
+      function vivohid(x) {
+        vivoimg.style.visibility = "hidden";
+        vhead.style.visibility = "hidden";
+        vivodes.style.visibility = "hidden";
+      }
+
+      function sonyvis(x) {
+        sonyimg.style.visibility = "visible";
+        shead.style.visibility = "visible";
+        sonydes.style.visibility = "visible";
+      }
+
+      function sonyhid(x) {
+        sonyimg.style.visibility = "hidden";
+        shead.style.visibility = "hidden";
+        sonydes.style.visibility = "hidden";
+      }
+
+      document.getElementById("yellow").addEventListener("click", yellow);
+      document.getElementById("grey").addEventListener("click", grey);
+      document.getElementById("purple").addEventListener("click", purple);
+      document.getElementById("red").addEventListener("click", red);
+      document.getElementById("green").addEventListener("click", green);
+      document.getElementById("pink").addEventListener("click", pink);
+
+      function yellow(x) {
+        document.body.style.backgroundColor = "yellow"
+      }
+      function grey(x) {
+        document.body.style.backgroundColor = "grey"
+      }
+      function purple(x) {
+        document.body.style.backgroundColor = "purple"
+      }
+      function purple(x) {
+        document.body.style.backgroundColor = "purple"
+      }
+      function red(x) {
+        body.style.color = "red"
+      }
+      function green(x) {
+        body.style.color = "green"
+      }
+      function pink(x) {
+        body.style.color = "pink"
+      }
+
+
+
+
+
+
+
+
+    </script>
+
+    </script>
+  </form>
+</body>
+
+</html>

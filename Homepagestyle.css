@@ -1,0 +1,138 @@
+body {
+    background-color: white;
+    font-family: "Courier",monospace;
+}
+
+.quiz {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black; 
+}
+.quiz_phrase{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.navbar {
+    width: 80%;
+    overflow: auto;
+    background-color: #333;
+    margin-left: 250px;
+    margin-top: 30px;
+    transition: opacity 1s;
+}
+
+.navbar a {
+    width: 90px;
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 40px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 35px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logo img {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+table,
+th,
+tr {
+    width: 200px;
+    height: 200px;
+    border-collapse: collapse;
+    padding: 120px;
+
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.image {
+    position: relative;
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgb(14, 13, 13);
+    font-family: "Courier";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image_overlay:hover {
+    opacity: 0.5;
+    background: #e1e1e1;
+    border: 5px solid black;
+
+}
+
+.image_title {
+    font-size: 40px;
+    font-weight: bold;
+}

@@ -1,0 +1,90 @@
+body{
+	margin: 0;
+	font-family: "Courier New",monospace;
+}
+
+.main-container{
+	display: flex;
+	margin: 20px 250px;
+}
+
+#selected-color{
+	margin-top: 5px;
+}
+
+#selected-color-image{
+	
+	width: 340px;
+	height: 400px;
+	align-items: center;
+	
+}
+
+.product-container{
+	border: 1px solid rgb(255, 255, 255);
+	margin-right: 300px;
+}
+
+
+
+.product-image{
+	width: 170px;
+	height: 200px;
+}
+
+#product-name{
+	font-size: 40px;
+}
+
+#basic-details{
+	font-size: 20px;
+	color: grey;
+}
+
+.form-elements{
+	margin-bottom: 40px;
+	height: 10px;
+}
+
+label{
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+#price-holder{
+	font-size: 20px;
+}
+
+#flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+#price{
+	font-weight: 900;
+}
+
+#buy-now{
+	color: white;
+	background-color: black;
+	border-radius: 25px;
+	font-size: 20px;
+	cursor: pointer;
+	border: #ff523b;
+	padding: 10px;
+	width: 150px;
+	margin-top: 10px;
+}
+
+#buy-now:hover {
+	color: white;
+	background-color: red;
+	border-radius: 25px;
+	font-size: 20px;
+	cursor: pointer;
+	border: red;
+	padding: 10px;
+	width: 150px;
+	margin-top: 10px;
+	transition: ease-in-out 0.2s;
+}

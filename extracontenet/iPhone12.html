@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra-Content page</title>
+    <style>
+        body{
+            font-family: "Courier",monospace
+        }
+        .navbar {
+            width: 80%;
+            overflow: auto;
+            background-color: #333;
+            margin-left: 250px;
+            margin-top: 30px;
+            transition: opacity 1s;
+        }
+
+        .navbar a {
+            width: 90px;
+            float: left;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            padding: 14px 40px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 40px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 35px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .logo img {
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        h2 {
+            padding-left: 20px;
+        }
+
+        p.intro {
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .video {
+
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .video video {
+            width: 100%;
+            height: 90%;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .description {
+            font-size: 20px;
+        }
+
+        .size {
+            border-radius: 25px;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 40px;
+            background-color: wheat;
+            font-family: "Sans-serif", Verdana;
+            display: flex;
+        }
+
+        .psize {
+            padding-top: 200px;
+            padding-right: 100px;
+        }
+
+        .size video {
+            padding-top: 20px;
+        }
+
+        .camera {
+            border-radius: 25px;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 40px;
+            background-color: wheat;
+            font-family: "Sans-serif", Verdana;
+            display: flex;
+        }
+
+        .pcamera {
+            padding-top: 100px;
+            padding-right: 100px;
+        }
+
+        .camera video {
+            padding-top: 20px;
+            width: 95%;
+            height: 95%;
+        }
+
+        .screen {
+            display: absolute;
+            background: wheat;
+            border-radius: 25px;
+            padding: 20px;
+            height: 490px;
+            width: 850px;
+            margin: 10px;
+        }
+
+        .screen video {
+            border-radius: 25px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .color {
+            border-radius: 25px;
+            padding: 15px;
+            width: 550px;
+            height: 490px;
+            background: wheat;
+        }
+
+        .color video {
+            border-radius: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 550px;
+            height: 480px;
+            object-fit: cover;
+        }
+
+        .main {
+            display: inline-flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="../Homepage.html" target="_self"><img src="../images/logo.jpeg" alt="logo" width="200" height="70" /></a>
+    </div>
+    <div class="navbar">
+        <a href="../Homepage.html" target="_self">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Products
+            </button>
+            <div class="dropdown-content">
+                <a href="../Product/android.html">Android</a>
+                <a href="../Product/apple.html">Apple</a>
+            </div>
+        </div>
+        <a href="../About/details.html" target="_self">About</a>
+        <a href="../Contents/Thumbnail.html">Brands</a>
+        <a href="#feedback">Feedback</a>
+        <div class="dropdown">
+            <button class="dropbtn">Other
+            </button>
+            <div class="dropdown-content">
+                <a href="../Quiz/Quiz.html">Quiz</a>
+                <a href="../SItemap/sitemap.html">Sitemap</a>
+                <a href="../extracontenet/iPhone12.html">Extra Content</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <h2>Latest arrival:</h2>
+    <p class="intro">Blast Past Fast.</p>
+    <div class="text">
+        <p class="description">A superpowerful chip. 5G speed. <br>
+            An advanced dual‑camera system. A Ceramic Shield front <br>
+            that's tougher than any smartphone glass. <br>
+            And a bright, beautiful OLED display. <br>
+            iPhone 12 has it all — in two great sizes.
+        <p>
+    </div>
+    <div class="video">
+        <video autoplay muted loop>
+            <source src="../images/into12.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="size">
+        <div class="textsize">
+            <p class="psize">Two just-right sizes.</p>
+        </div>
+        <div class="sizevideo">
+            <video autoplay muted loop>
+                <source src="../images/sizes.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <br><br>
+    <div class="camera">
+        <div class="textcamera">
+            <p class="pcamera">Advanced dual-camera system with Night mode selfies.</p>
+        </div>
+        <div class="cameravideo">
+            <video autoplay muted loop>
+                <source src="../images/camera.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <br>
+    <div class="main">
+        <div class="screen">
+            <video autoplay muted loop>
+                <source src="../images/screen.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="color">
+            <video autoplay muted loop>
+                <source src="../images/colors.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+
+</html>

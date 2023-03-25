@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" type="image/jpg" href="../images/favicon.jpg">
+</head>
+
+<body>
+    <a href="../Homepage.html" target="_self"><img src="../images/logo.jpeg" alt="logo" class="logo"></a>
+    <div class="quiz">
+
+        <p class="head">Quiz</p>
+        <hr>
+    </div>
+    <form name="quiz" id="quiz">
+        <div>
+            <input type="button" value="Start" class="button" id="Start" onclick="startcount()"><br>
+            <p id="count"></p>
+            <div>
+                <h3> 1. The first commercial cell phone was created in:</h3>
+                <p><input type="radio" name="question1" value="1" id="1">A. 1973</p>
+                <p><input type="radio" name="question1" value="2" id="2">B. 1978</p>
+                <p><input type="radio" name="question1" value="3" id="3">C. 1983</p>
+                <p><input type="radio" name="question1" value="4" id="4">D. 1988</p>
+            </div>
+            <div>
+                <h3>2. The same first cell phone was first sold in:</h3>
+                <p><input type="radio" name="question2" value="1" id="1">A. 1973</p>
+                <p><input type="radio" name="question2" value="2" id="2">B. 1978</p>
+                <p><input type="radio" name="question2" value="3" id="3">C. 1983</p>
+                <p><input type="radio" name="question2" value="4" id="4">D. 1988</p>
+            </div>
+            <div>
+                <h3>3. Mobile phones are called cell phones because:</h3>
+                <p><input type="radio" name="question3" value="1">A. The phones work together in a system like the
+                    millions of cells in your body</p>
+                <p><input type="radio" name="question3" value="2">B. Phones communicate with nearby base stations
+                    referred to as "cells"</p>
+                <p><input type="radio" name="question3" value="3">C. Mobile phones companies split up the country into
+                    asles regions know as "cells"</p>
+                <p><input type="radio" name="question3" value="4">D. Smart phone designs originally referred to
+                    installed applications as "cells"</p>
+            </div>
+            <div>
+                <h3>4. The first video game on a mobile phone was:</h3>
+                <p><input type="radio" name="question4" value="1">A. Frogger</p>
+                <p><input type="radio" name="question4" value="2">B. Pac-Man</p>
+                <p><input type="radio" name="question4" value="3">C. Pinball</p>
+                <p><input type="radio" name="question4" value="4">D. Tetris</p>
+            </div>
+            <div>
+                <h3>5. The first voicemail system was created in:</h3>
+                <p><input type="radio" name="question5" value="1">A. 1971</p>
+                <p><input type="radio" name="question5" value="2">B. 1976</p>
+                <p><input type="radio" name="question5" value="3">C. 1981</p>
+                <p><input type="radio" name="question5" value="4">D. 1986</p>
+            </div>
+            <div>
+                <h3>6. Recharging the average cell phone costs how much during a year?</h3>
+                <p><input type="radio" name="question6" value="1">A. $0.25</p>
+                <p><input type="radio" name="question6" value="2">B. $2.50</p>
+                <p><input type="radio" name="question6" value="3">C. $25.00</p>
+                <p><input type="radio" name="question6" value="4">D. $250.00</p>
+            </div>
+            <div>
+                <h3>7. The first text message was sent in:</h3>
+                <p><input type="radio" name="question7" value="1">A. 1987</p>
+                <p><input type="radio" name="question7" value="2">B. 1992</p>
+                <p><input type="radio" name="question7" value="3">C. 1997</p>
+                <p><input type="radio" name="question7" value="4">D. 2002</p>
+            </div>
+            <div>
+                <h3>8. The largest user of cell phone data is:</h3>
+                <p><input type="radio" name="question8" value="1">A. Web browsing</p>
+                <p><input type="radio" name="question8" value="2">B. Netflix</p>
+                <p><input type="radio" name="question8" value="3">C. Facebook</p>
+                <p><input type="radio" name="question8" value="4">D. Skype
+                </p>
+            </div>
+            <div>
+                <h3>9. The average person unlocks his phone how many times per day?</h3>
+                <p><input type="radio" name="question9" value="1">A. 25</p>
+                <p><input type="radio" name="question9" value="2">B. 60</p>
+                <p><input type="radio" name="question9" value="3">C. 110</p>
+                <p><input type="radio" name="question9" value="4">D. 150</p>
+            </div>
+            <div>
+                <h3>10. Which band of radio wave frequencies do cellular phones use for telecommunication?</h3>
+                <p><input type="radio" name="question10" value="1">A. 100-200 MHz</p>
+                <p><input type="radio" name="question10" value="2">B. 1,100-1,200 MHz</p>
+                <p><input type="radio" name="question10" value="3">C. 500-600 MHz</p>
+                <p><input type="radio" name="question10" value="4">D. 800-900 MHz</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p id="output"></p>
+        <input type="button" value="Results" class="button" id="result" onclick="stopcount()">
+
+    </form>
+    <script src="control.js"></script>
+    <p>Click below image to see the page editor</p>
+    <a href="../editor/student3.html"><img src="../images/page editor.jpeg" alt="page editor image"></a>
+</body>
+
+</html>

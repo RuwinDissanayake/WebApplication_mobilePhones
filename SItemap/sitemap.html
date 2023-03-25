@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Site Map</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: "Courier", monospace;
+        }
+
+
+
+        .navbar {
+            width: 80%;
+            overflow: auto;
+            background-color: #333;
+            margin-left: 250px;
+            margin-top: 30px;
+        }
+
+        .navbar a {
+            width: 90px;
+            float: left;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            padding: 14px 40px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 40px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 35px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .logo img {
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+
+        .txt:hover {
+            fill: red;
+        }
+
+        .txt {
+            font-family: courier;
+        }
+
+        svg {
+            position: relative;
+            left: 20px;
+        }
+    </style>
+    <link rel="shortcut icon" type="image/jpg" href="../images/favicon.jpg">
+</head>
+
+<body>
+    <div class="logo">
+        <a href="../Homepage.html"><img src="../images/logo.jpeg" alt="logo" width="250" height="90"></a>
+    </div>
+    <div class="navbar">
+        <a href="../Homepage.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Products
+            </button>
+            <div class="dropdown-content">
+                <a href="../Product/android.html">Android</a>
+                <a href="../Product/apple.html">Apple</a>
+
+            </div>
+        </div>
+        <a href="../About/details.html">About</a>
+        <a href="../Contents/Thumbnail.html">Brands</a>
+        <a href="#feedback">Feedback</a>
+        <div class="dropdown">
+            <button class="dropbtn">Other
+            </button>
+            <div class="dropdown-content">
+                <a href="../Quiz/Quiz.html">Quiz</a>
+                <a href="#sitemap">Sitemap</a>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align:center; font-family:courier; position:relative;left:45px;">Site Map</h1>
+    <svg height="600" width="1350" style="border:5px solid #555">
+        <g id="groupId1">
+            <rect class="rect" width="200" height="50" x="625" y="100" rx="20" ry="20"
+                style="fill:black ;stroke-width:10;stroke:rgb(0,0,0)" />
+            <text class="txt" fill="#ffffff" font-size="25" font-family="Verdana" x="650" y="130"
+                font-color="black">Home Page</text>
+        </g>
+        <g id="groupId2">
+            <rect class="rect" width="200" height="50" x="880" y="200" rx="20" ry="20"
+                style="fill:black ;stroke-width:10;stroke:rgb(0,0,0)" />
+            <text class="txt" fill="#ffffff" font-size="25" font-family="Verdana" x="930" y="230"
+                font-color="black">About</text>
+
+        </g>
+        <g id="groupId3">
+            <rect class="rect" width="200" height="50" x="350" y="200" rx="20" ry="20"
+                style="fill:black ;stroke-width:10;stroke:rgb(0,0,0)" />
+            <text class="txt" fill="#ffffff" font-size="25" font-family="Verdana" x="415" y="230" font-color="black">Q &
+                A</text>
+        </g>
+        <g id="groupId4">
+            <rect class="rect" width="200" height="50" x="100" y="200" rx="20" ry="20"
+                style="fill:black ;stroke-width:10;stroke:rgb(0,0,0)" />
+            <text class="txt" fill="#ffffff" font-size="25" font-family="Verdana" x="165" y="230"
+                font-color="black">Products</text>
+        </g>
+        <g id="groupId5">
+            <rect class="rect" width="200" height="50" x="1110" y="200" rx="20" ry="20"
+                style="fill:black ;stroke-width:10;stroke:rgb(0,0,0)" />
+            <text class=txt fill="#ffffff" font-size="25" font-family="Verdana" x="1160" y="230"
+                font-color="black">Other</text>
+        </g>
+        <g id="groupId6">
+            <rect class="rect" width="150" height="50" x="185" y="300" rx="20" ry="20"
+                style="fill:black ;stroke-width:10;stroke:rgb(0,0,0)" />
+            <text class="txt" fill="#ffffff" font-size="25" font-family="Verdana" x="200" y="330"
+                font-color="black">Apple</text>
+        </g>
+        <g id="groupId7">
+            <rect class="rect" width="150" height="50" x="185" y="400" rx="20" ry="20"
+                style="fill:black ;stroke-width:10;stroke:rgb(0,0,0)" />
+            <text class="txt" fill="#ffffff" font-size="25" font-family="Verdana" x="200" y="430"
+                font-color="black">Android</text>
+        </g>
+        <g id="groupId7">
+            <rect class="rect" width="150" height="50" x="185" y="500" rx="20" ry="20"
+                style="fill:black ;stroke-width:10;stroke:rgb(0,0,0)" />
+            <text class="txt" fill="#ffffff" font-size="25" font-family="Verdana" x="200" y="530"
+                font-color="black">Summary</text>
+        </g>
+        <g>
+            <g id="groupId8">
+                <rect class="rect" width="150" height="50" x="1160" y="300" rx="20" ry="20"
+                    style="fill:black ;stroke-width:10;stroke:rgb(0,0,0)" />
+                <text class=txt fill="#ffffff" font-size="25" font-family="Verdana" x="1175" y="330"
+                    font-color="black">Quiz</text>
+            </g>
+            <g id="groupId9">
+                <rect class="rect" width="150" height="50" x="1160" y="400" rx="20" ry="20"
+                    style="fill:black ;stroke-width:10;stroke:rgb(0,0,0)" />
+                <text class=txt fill="#ffffff" font-size="25" font-family="Verdana" x="1175" y="430"
+                    font-color="black">Extra</text>
+            </g>
+            <g id="groupId10">
+                <rect class="rect" width="200" height="50" x="625" y="200" rx="20" ry="20"
+                    style="fill:black ;stroke-width:10;stroke:rgb(0,0,0)" />
+                <text class="txt" fill="#ffffff" font-size="25" font-family="Verdana" x="680" y="230"
+                    font-color="black">Brands</text>
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="725" y1="150" x2="725" y2="225"></line>
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="550" y1="225" x2="670" y2="225"></line>
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="785" y1="225" x2="880" y2="225"></line>
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="300" y1="225" x2="350" y2="225"></line>
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="1050" y1="225" x2="1110" y2="225"></line>
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="135" y1="250" x2="135" y2="525"></line>
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="135" y1="325" x2="175" y2="325"></line>
+                <polyline points="170,330 175,325 170,315" stroke="black" stroke-width="2" />
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="135" y1="425" x2="175" y2="425"></line>
+                <polyline points="170,430 175,425 170,415" stroke="black" stroke-width="2" />
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="135" y1="525" x2="175" y2="525"></line>
+                <polyline points="170,530 175,525 170,515" stroke="black" stroke-width="2" />
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="1110" y1="240" x2="1110" y2="420"></line>
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="1110" y1="320" x2="1150" y2="320"></line>
+                <polyline points="1145,325 1150,320 1145,315" stroke="black" stroke-width="2" />
+            </g>
+            <g>
+                <line stroke="black" strokewidth="2" x1="1110" y1="420" x2="1150" y2="420"></line>
+                <polyline points="1145,425 1150,420 1145,415" stroke="black" stroke-width="2" />
+            </g>
+
+
+
+    </svg>
+
+    <script>
+        document.getElementById("groupId1").addEventListener("click", function () {
+            document.location.href = "../Homepage.html";
+
+        });
+        document.getElementById("groupId2").addEventListener("click", function () {
+            document.location.href = "../About/details.html";
+
+        });
+        /*document.getElementById("groupId3").addEventListener("click", function () {
+            document.location.href = "try.html";
+
+        });
+        document.getElementById("groupId4").addEventListener("click", function () {
+            document.location.href = "";
+
+        });
+        document.getElementById("groupId5").addEventListener("click", function () {
+            document.location.href = "try.html";
+
+        });*/
+        document.getElementById("groupId6").addEventListener("click", function () {
+            document.location.href = "../Product/android.html";
+
+        });
+        document.getElementById("groupId7").addEventListener("click", function () {
+            document.location.href = "../Product/apple.html";
+
+        });
+        document.getElementById("groupId8").addEventListener("click", function () {
+            document.location.href = "../Quiz/Quiz.html";
+
+        });
+        document.getElementById("groupId9").addEventListener("click", function () {
+            document.location.href = "../extracontenet/iPhone12.html";
+
+        });
+        document.getElementById("groupId10").addEventListener("click", function () {
+            document.location.href = "../Contents/Thumbnail.html";
+
+        });
+
+
+
+    </script>
+    <p>Click below image to see the page editor</p>
+    <a href="#student4"><img src="../images/page editor.jpeg" alt="page editor image"></a>
+</body>
+
+</html>

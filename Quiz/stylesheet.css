@@ -1,0 +1,54 @@
+body{
+    border: 5px solid black;
+}
+p{
+    font-family: "Courier",monospace;
+}
+p.head{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Courier",monospace;
+}
+div.quiz{
+    text-align: center;
+    font-family: "Courier New",monospace;
+}
+#count{
+    background-color: white;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Courier New",monospace;
+    margin: 0;
+    height: 70px;
+    width: 200px;
+}
+.button{
+    align-items: center;
+    align-self: center;
+    vertical-align: middle;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Courier New",monospace;
+}
+form{
+    font-family: "Courier New",monospace;
+}
+.logo{
+    width: 270px;
+    height: 70px;
+    position: absolute;
+}
+#output{
+    font-size: 30px;
+}
